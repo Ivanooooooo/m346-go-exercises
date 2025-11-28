@@ -10,7 +10,11 @@ func main() {
 	fibs[4] = fibs[2] + fibs[3]
 	// TODO: correct up to index 4 using direct element access
 
-	fibs = append(fibs, fibs[3]+fibs[4]) // TODO: replace 0 with the next Fibonacci number
+	fibs = append(fibs, fibs[3]+fibs[4])
+	fibs = append(fibs, fibs[len(fibs)-2]+fibs[len(fibs)-1])
+	fibs = append(fibs, fibs[len(fibs)-2]+fibs[len(fibs)-1])
+	fibs = append(fibs, fibs[len(fibs)-2]+fibs[len(fibs)-1])
+	// TODO: replace 0 with the next Fibonacci number
 	// TODO: compute three more Fibonacci numbers and append them
 
 	fmt.Println(fibs) // expected output: [1 1 2 3 5 8 13 21 34]
