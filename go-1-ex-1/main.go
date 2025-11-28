@@ -3,7 +3,7 @@ package main
 import "fmt"
 
 func main() {
-	// TODO: Declare and initialize the variables being used in the output!
+	
 var firstName string = "Ivano"
 var lastName string = "Gavran Stojanovski"
 var dayOfBirth int = 1
