@@ -1,7 +1,15 @@
 package main
 
-// TODO: implement the function computeHypotenuse using math.Pow and math.Sqrt
+import "math"
+
+func computeHypotenuse(a float64, b float64) float64 {
+	ab := math.Pow(a, 2) + math.Pow(b, 2)
+	return math.Sqrt(ab)
+
+}
 
 func main() {
-	// TODO: call the function computeHypotenuse
+	hypotenuse := computeHypotenuse(3, 4)
+	print(hypotenuse)
+
 }
