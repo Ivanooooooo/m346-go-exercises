@@ -1,9 +1,18 @@
 package main
 
-// TODO: implement the function convertCelsiusToFahrenheit
-// TODO: implement the function convertFahrenheitToCelsius
+func convertCelsiusToFahrenheit(celsius int) int {
+	fahrenheit := (celsius * 9 / 5) + 32
+	return fahrenheit
+}
+func convertFahrenheitToCelsius(fahrenheit int) int {
+	celsius := (fahrenheit - 32) * 5 / 9
+	return celsius
+}
 
 func main() {
-	// TODO: call the function convertCelsiusToFahrenheit
-	// TODO: call the function convertFahrenheitToCelsius
+	fahrenheit := convertCelsiusToFahrenheit(30)
+	celsius := convertFahrenheitToCelsius(90)
+	println(fahrenheit, "F")
+	println(celsius, "°C")
+
 }
